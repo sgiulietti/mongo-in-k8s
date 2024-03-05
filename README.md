@@ -1,5 +1,5 @@
 ## Demo MongoDB in K8s using Minikube
- Prerequisites: Have installed and configured MINIKUBE.
+ Prerequisites: Have installed and configured Minikube.
 
  ### MongoDB
 
@@ -40,4 +40,14 @@ Navigate on terminal to the folder that contains the file and execute the follow
 
     kubectl apply -f confirmap.yaml
     kubectl apply -f config.yaml
+
+Step 4: Add a service component into the configuration file, then execute the creation of the service component.
+Navigate on terminal to the folder that contains the file and execute the following command:
+
+    kubectl apply -f confname.yaml
+
+Step 5: Make available the UI for mongo express.
+Navigate on terminal to the folder that contains the file and execute the following command:
+
+    minikube service servicename        
 
