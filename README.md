@@ -5,7 +5,7 @@
 
  Step 1: Create a mongodb deployment yaml file.
 
- Step 2: Create a secret file for reference environment variables.
+ Step 2: Create a secret yaml file for reference environment variables.
 
  Step 3: Convert a plain text to base 64 encoded for use as value of environment variable.
 Execute on terminal the following command:
@@ -14,7 +14,7 @@ Execute on terminal the following command:
 
 Copy and use the result as the value of the environment variable.
 
-Step 4: Execute the creation of the secret file.
+Step 4: Execute the creation of the secret yaml file.
 Navigate on terminal to the folder that contains the file and execute the following command:
 
     kubectl apply -f secret.yaml
@@ -33,7 +33,7 @@ Navigate on terminal to the folder that contains the file and execute the follow
 
 Step 1: Create a mongodb deployment yaml file.
 
-Step 2: Create a configmap file for reference to the database server.
+Step 2: Create a configmap yaml file for reference to the database server.
 
 Step 3: Execute the creation of the configmap file and then the configuration of the deployment.
 Navigate on terminal to the folder that contains the file and execute the following command:
